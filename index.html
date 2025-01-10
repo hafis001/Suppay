@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Network Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mobile Network Services</h1>
+
+        <!-- Airtime Topup Form -->
+        <div class="form-container">
+            <h2>Airtime Topup</h2>
+            <form id="airtimeForm">
+                <label for="network">Select Network:</label>
+                <select id="network" name="network">
+                    <option value="MTN">MTN</option>
+                    <option value="Airtel">Airtel</option>
+                    <option value="Glo">Glo</option>
+                    <option value="9mobile">9mobile</option>
+                </select>
+                <br>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <br>
+                <label for="phone_number">Phone Number:</label>
+                <input type="text" id="phone_number" name="phone_number" required>
+                <br>
+                <button type="submit">Top Up</button>
+            </form>
+        </div>
+
+        <!-- Data Bundle Form -->
+        <div class="form-container">
+            <h2>Data Bundle</h2>
+            <form id="dataForm">
+                <label for="data_price">Price:</label>
+                <input type="number" id="data_price" name="price" required>
+                <br>
+                <label for="validity">Validity (days):</label>
+                <input type="number" id="validity" name="validity" required>
+                <br>
+                <label for="phone_number">Phone Number:</label>
+                <input type="text" id="phone_number_data" name="phone_number" required>
+                <br>
+                <button type="submit">Buy Data Bundle</button>
+            </form>
+        </div>
+
+        <!-- TV Subscription Form -->
+        <div class="form-container">
+            <h2>TV Subscription</h2>
+            <form id="tvForm">
+                <label for="provider">Provider:</label>
+                <select id="provider" name="provider">
+                    <option value="Dstv">Dstv</option>
+                    <option value="GOtv">GOtv</option>
+                    <option value="StarTimes">StarTimes</option>
+                </select>
+                <br>
+                <label for="package">Package:</label>
+                <input type="text" id="package" name="package" required>
+                <br>
+                <label for="duration">Duration (days):</label>
+                <input type="number" id="duration" name="duration" required>
+                <br>
+                <label for="phone_number_tv">Phone Number:</label>
+                <input type="text" id="phone_number_tv" name="phone_number" required>
+                <br>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Transaction Logs -->
+        <h2>Transaction Log</h2>
+        <div id="transactionLogs">
+            <!-- Transaction details will be shown here dynamically -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
