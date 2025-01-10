@@ -75,6 +75,29 @@
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
+               <!-- Electricity Bill payment Card -->
+            <div class="card">
+                <h2>Electricity Bill</h2>
+                <form id="tvForm">
+                    <label for="provider">Provider:</label>
+                    <select id="provider" name="provider">
+                        <option value="Dstv">KEDCO</option>
+                        <option value="GOtv">Disco</option>
+                        <option value="StarTimes">Dynasty</option>
+                    </select>
+
+                    <label for="units">Units</label>
+                    <input type="text" id="package" name="units" required>
+
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="duration" required>
+
+                    <label for="phone_number_tv">Meter Number:</label>
+                    <input type="text" id="phone_number_tv" name="phone_number" required>
+
+                    <button type="submit">Pay bill</button>
+                </form>
+            </div>
         </div>
 
         <!-- Transaction Logs -->
